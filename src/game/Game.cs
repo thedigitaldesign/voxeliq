@@ -6,6 +6,7 @@
  */
 
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using VoxeliqEngine.Common.Logging;
 using VoxeliqEngine.Common.Versions;
 using VoxeliqEngine.Core;
@@ -47,6 +48,13 @@ namespace VoxeliqGame
         {
             this.Content.RootDirectory = "Content"; // set content root directory.
             this._graphicsDeviceManager = new GraphicsDeviceManager(this);
+
+#if ANDROID
+            this._graphicsDeviceManager.IsFullScreen = true;
+            this._graphicsDeviceManager.PreferredBackBufferWidth = 800;
+            this._graphicsDeviceManager.PreferredBackBufferHeight = 480;
+            this._graphicsDeviceManager.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
+#endif
         }
 
         /// <summary>
@@ -55,7 +63,10 @@ namespace VoxeliqGame
         protected override void Initialize()
         {
             Logger.Trace("init()"); // log the init.
+
+#if !ANDROID
             this.Window.Title = string.Format("Voxeliq [{0}/{1}]", VersionInfo.GameFramework, VersionInfo.GraphicsApi); // set the window title.
+#endif
 
             this.IsMouseVisible = false;
             this.ScreenManager = new GraphicsManager(this._graphicsDeviceManager, this); // start the screen manager.
@@ -102,6 +113,13 @@ namespace VoxeliqGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+#if ANDROID
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            {
+                Exit();
+            }
+#endif
+
             // tell the TimeRuler that we're starting a new frame. you always want
             // to call this at the start of Update
             this._timeRuler.StartFrame();

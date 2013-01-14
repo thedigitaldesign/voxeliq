@@ -60,6 +60,7 @@ namespace VoxeliqEngine.Common.Logging
         /// <param name="level"></param>
         private static void SetConsoleForegroundColor(Logger.Level level)
         {
+#if !ANDROID
             switch (level)
             {
                 case Logger.Level.Trace:
@@ -84,6 +85,7 @@ namespace VoxeliqEngine.Common.Logging
                 default:
                     break;
             }
+#endif
         }
     }
 }

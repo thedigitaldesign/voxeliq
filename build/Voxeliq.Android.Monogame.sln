@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxeliqGame.Android.Monogame", "..\src\game\VoxeliqGame.Android.Monogame.csproj", "{4531E3E4-06B5-4D2E-A9B2-031FBDDDB194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxeliqEngine.Android.MonoGame", "..\src\Engine\VoxeliqEngine.Android.MonoGame.csproj", "{870CAB5A-2453-4C69-BF93-04825AF32B32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4531E3E4-06B5-4D2E-A9B2-031FBDDDB194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4531E3E4-06B5-4D2E-A9B2-031FBDDDB194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4531E3E4-06B5-4D2E-A9B2-031FBDDDB194}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4531E3E4-06B5-4D2E-A9B2-031FBDDDB194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4531E3E4-06B5-4D2E-A9B2-031FBDDDB194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870CAB5A-2453-4C69-BF93-04825AF32B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870CAB5A-2453-4C69-BF93-04825AF32B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870CAB5A-2453-4C69-BF93-04825AF32B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870CAB5A-2453-4C69-BF93-04825AF32B32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
