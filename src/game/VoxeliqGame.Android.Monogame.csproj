@@ -91,6 +91,45 @@
     <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Textures\terrain.xnb">
       <Link>Assets\Content\Textures\terrain.xnb</Link>
     </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\MiiCompleteMap_0.xnb">
+      <Link>Assets\Content\MiiCompleteMap_0.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Models\AimedBlock.xnb">
+      <Link>Assets\Content\Models\AimedBlock.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Models\Mii.xnb">
+      <Link>Assets\Content\Models\Mii.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Models\SkyDome.xnb">
+      <Link>Assets\Content\Models\SkyDome.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Models\SkyDomeTexture_0.xnb">
+      <Link>Assets\Content\Models\SkyDomeTexture_0.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\BlockEffect.mgfxo">
+      <Link>Assets\Content\Effects\BlockEffect.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\DualTextured.mgfxo">
+      <Link>Assets\Content\Effects\DualTextured.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\PerlinNoise.mgfxo">
+      <Link>Assets\Content\Effects\PerlinNoise.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\PostProcessing\Bloom\BloomCombine.mgfxo">
+      <Link>Assets\Content\Effects\PostProcessing\Bloom\BloomCombine.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\PostProcessing\Bloom\BloomExtract.mgfxo">
+      <Link>Assets\Content\Effects\PostProcessing\Bloom\BloomExtract.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\PostProcessing\Bloom\GaussianBlur.mgfxo">
+      <Link>Assets\Content\Effects\PostProcessing\Bloom\GaussianBlur.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\Content\Effects\SkyDome.mgfxo">
+      <Link>Assets\Content\Effects\SkyDome.mgfxo</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\bin\debug\windows\monogame\opengl\config.ini">
+      <Link>Assets\Content\config.ini</Link>
+    </AndroidAsset>
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -101,8 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Content\Audio\" />
-    <Folder Include="Assets\Content\Effects\" />
-    <Folder Include="Assets\Content\Models\" />
     <Folder Include="Resources\Layout\" />
   </ItemGroup>
   <ItemGroup>

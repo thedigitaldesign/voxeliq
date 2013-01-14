@@ -16,7 +16,7 @@ namespace VoxeliqEngine.Graphics
         /// </summary>
         public int Width
         {
-            get { return this.GetInt("Width", 1280); }
+            get { return this.GetInt("Width", 800); }
             set { this.Set("Width", value); }
         }
 
@@ -25,7 +25,7 @@ namespace VoxeliqEngine.Graphics
         /// </summary>
         public int Height
         {
-            get { return this.GetInt("Height", 720); }
+            get { return this.GetInt("Height", 480); }
             set { this.Set("Height", value); }
         }
 
