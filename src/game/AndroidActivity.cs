@@ -1,22 +1,26 @@
+using System;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Util;
+using VoxeliqEngine.Common.Logging;
 using VoxeliqGame;
 
 namespace AndroidGame1
 {
-    [Activity(Label = "AndroidGame1"
-        , MainLauncher = true
-        , Icon = "@drawable/icon"
-        , Theme = "@style/Theme.Splash"
-        , AlwaysRetainTaskState = true
-        , LaunchMode = Android.Content.PM.LaunchMode.SingleInstance
-        , ScreenOrientation = ScreenOrientation.SensorLandscape
-        , ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden)]
+    [Activity(
+        Label = "Voxeliq",
+        MainLauncher = true,
+        Icon = "@drawable/icon",
+        Theme = "@style/Theme.Splash",
+        ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden)]
     public class Activity1 : Microsoft.Xna.Framework.AndroidGameActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
+            // Watch for unhandled exceptions
+            AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionHandler;
+
             base.OnCreate(bundle);
 
             VoxeliqGame.Game.Activity = this;
@@ -24,6 +28,19 @@ namespace AndroidGame1
             var g = new Game();
             SetContentView(g.Window);
             g.Run();
+        }
+
+        // <summary>
+        /// Unhandled exception handler.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">UnhandledExceptionEventArgs</param>
+        private static void UnhandledExceptionHandler(object sender, UnhandledExceptionEventArgs e)
+        {
+            Log.Error(
+                e.IsTerminating
+                    ? "Voxeliq terminating because of unhandled exception: "
+                    : "Caught unhandled exception: ", ((Exception) e.ExceptionObject).StackTrace);
         }
     }
 }
