@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voxeliq.MonsterEditor", "..\src\Tools\MonsterEditor\Voxeliq.MonsterEditor.csproj", "{685EBDF9-6498-4FE9-943B-85BD11C1436A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voxeliq.MonsterEditor", "..\..\src\Tools\MonsterEditor\Voxeliq.MonsterEditor.csproj", "{685EBDF9-6498-4FE9-943B-85BD11C1436A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content", "..\src\Tools\MonsterEditor\Content\Content.contentproj", "{618DED89-9BA8-44D7-83A0-163041666FAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content", "..\..\src\Tools\MonsterEditor\Content\Content.contentproj", "{618DED89-9BA8-44D7-83A0-163041666FAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentLibrary", "..\src\Tools\MonsterEditor\ContentLibrary\ContentLibrary.csproj", "{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentLibrary", "..\..\src\Tools\MonsterEditor\ContentLibrary\ContentLibrary.csproj", "{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
